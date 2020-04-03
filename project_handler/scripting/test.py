@@ -9,7 +9,7 @@
 
 **Date** : 2020-03-23
 
-**Project** : ##__NAME__##
+**Project** : project_handler
 
 **File that test scripting module**
 """
@@ -19,10 +19,10 @@ import shutil
 import pandas as pd
 import numpy as np
 
-from ##__NAME__##.scripting import MODULE
-from ##__NAME__##.scripting.file_structure_manager import get_file_structure, get_dir_structure, create_error_less_directory
-from ##__NAME__##.scripting.test_manager import set_test_folders
-from ##__NAME__##.settings import RESSOURCES_ROOT, TEST_ROOT
+from project_handler.scripting import MODULE
+from project_handler.scripting.file_structure_manager import get_file_structure, get_dir_structure, create_error_less_directory
+from project_handler.scripting.test_manager import set_test_folders
+from project_handler.settings import RESSOURCES_ROOT, TEST_ROOT
 
 
 @set_test_folders(

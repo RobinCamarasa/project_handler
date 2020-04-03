@@ -9,10 +9,10 @@
 
 **Date** : 2020-03-23
 
-**Project** : ##__NAME__##
+**Project** : project_handler
 
-**Code of the module ##__NAME__##**
+**Code of the module project_handler**
 
 """
 
-MODULE=['##__NAME__##']
+MODULE=['project_handler']

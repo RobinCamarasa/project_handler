@@ -9,9 +9,9 @@
 
 **Date** : 2020-03-23
 
-**Project** : ##__NAME__##
+**Project** : project_handler
 
-**Contains the global settings of the ##__NAME__## project**
+**Contains the global settings of the project_handler project**
 
 """
 import os
@@ -27,3 +27,5 @@ TEST_ROOT = os.path.join(PROJECT_ROOT, 'test')
 # Set ressources root
 RESSOURCES_ROOT = os.path.join(PROJECT_ROOT, 'ressources')
 
+# Set author default
+AUTHOR = 'Robin Camarasa'

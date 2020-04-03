@@ -24,4 +24,4 @@ test
 doc/build/doctrees/*
 
 # Virtual environment
-##__NAME__##_env/*
+project_handler_env/*

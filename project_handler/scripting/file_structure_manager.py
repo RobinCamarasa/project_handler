@@ -9,7 +9,7 @@
 
 **Date** : 2020-03-23
 
-**Project** : ##__NAME__##
+**Project** : project_handler
 
 **File that contains the code related to the file structure management**
 """

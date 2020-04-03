@@ -9,7 +9,7 @@
 
 **Date** : 2020-03-23
 
-**Project** : ##__NAME__##
+**Project** : project_handler
 
 **Code that creates a module out of the the code**
 
@@ -25,11 +25,12 @@ root = os.path.dirname(os.path.abspath(__file__))
 
 # Get long description
 try:
+    long_description = ''
     readme_path = os.path.join(root, 'README.md')
     with open(readme_path, 'r') as readme_handler:
-        long_description = readme_handler.read()
+        long_description += readme_handler.read()
 except:
-    long_description = 'pytest'
+    long_description = ''
 
 
 # Get version
@@ -49,19 +50,25 @@ try:
         requirements = [
             dependency
             for dependency in requirements_handler.readlines()
-            if not '##__NAME__##' in dependency
+            if not 'project_handler' in dependency
         ]
 except:
     requirements=[]
 
 setup(
-    name='##__NAME__##',
+    name='project_handler',
     author='Robin Camarasa',
     version=version,
     packages=find_packages(),
-    description='##__Description__##',
+    description='project_handler is a tiny librairie that handles project management',
     long_description=long_description,
     install_requires=requirements,
     author_email='r.camarasa@erasmusmc.nl',
+    entry_points={
+        'console_scripts':[
+            'newpythonproject = project_handler.entry_points:newpythonproject',
+            'applyconfig = project_handler.entry_points:applyconfig',
+        ]
+    }
 )
 
